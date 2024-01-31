@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div *ngIf="isAuthenticated==true">
+        <button  class="col btn btn-secondary m-3" (click)="logout()">LogOut</button><br>
+        <button  class="col btn btn-secondary m-3" [routerLink]="['add']">AddBooks</button><br>
+        <button  class="col btn btn-secondary m-3" [routerLink]="['view']"> ViewBooks</button>
+    </div>
+    <div *ngIf="isAuthenticated==false">
+    <button class="col btn btn-secondary m-3" [routerLink]="['register']">Register</button><br>
+    <button  class="col btn btn-secondary m-3" [routerLink]="['login']">Login</button><br>
+</div>
+  
+</div>
+<!-- <button class="btn btn-danger" (click)="view()">Viewbook</button> -->

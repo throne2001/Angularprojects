@@ -1,0 +1,12 @@
+
+<form  #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">UserName</label>
+      <input type="text" class="form-control"  name="uname" #uname="ngModel" [(ngModel)]="data.username"  placeholder="Enter the Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" #password="ngModel" [(ngModel)]="data.password"  placeholder="Enter the password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
